@@ -1,0 +1,2535 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="মিয়া বাড়ি — এনায়েতপুর, কাশিমপুর, গাজীপুর মহানগর। ইসলামিক পরিবেশে নিরাপদ ও আরামদায়ক বাসস্থান।">
+    <title>মিয়া বাড়ি | Mia Bari — এনায়েতপুর, কাশিমপুর, গাজীপুর</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bd-green: #006A4E;
+            --bd-green-dark: #004d38;
+            --bd-green-darker: #003828;
+            --bd-red: #F42A41;
+            --bd-red-dark: #c41e30;
+            --gold: #C9A961;
+            --light-bg: #F8F9FA;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-body: #4a5568;
+            --text-muted: #718096;
+            --border: #e2e8f0;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+            --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+        body {
+            font-family: 'Hind Siliguri', 'Inter', -apple-system, sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body.lang-bn .en { display: none !important; }
+        body.lang-en .bn { display: none !important; }
+
+        a { text-decoration: none; }
+
+        /* ============ HEADER ============ */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .logo-mark {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--bd-green), var(--bd-green-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,106,78,0.25);
+        }
+
+        .logo-mark::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: -4px;
+            width: 13px;
+            height: 13px;
+            background: var(--bd-red);
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.15;
+        }
+
+        .logo-text .bn {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--bd-green);
+            letter-spacing: 0.3px;
+        }
+
+        .logo-text .en {
+            font-size: 0.62rem;
+            color: var(--text-muted);
+            letter-spacing: 2.5px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0.2rem;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            padding: 0.6rem 0.95rem;
+            font-weight: 500;
+            font-size: 0.92rem;
+            border-radius: 8px;
+            transition: all 0.25s;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .nav-menu a i {
+            font-size: 0.78rem;
+            opacity: 0.6;
+            transition: opacity 0.25s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--bd-green);
+            background: rgba(0,106,78,0.06);
+        }
+
+        .nav-menu a:hover i { opacity: 1; }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        .lang-toggle {
+            display: flex;
+            background: var(--light-bg);
+            border-radius: 25px;
+            padding: 3px;
+            border: 1px solid var(--border);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+            font-family: inherit;
+        }
+
+        .lang-btn.active {
+            background: var(--bd-green);
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,106,78,0.3);
+        }
+
+        .btn-portal {
+            background: var(--bd-green);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s;
+            box-shadow: 0 4px 12px rgba(0,106,78,0.25);
+        }
+
+        .btn-portal:hover {
+            background: var(--bd-green-dark);
+            transform: translateY(-2px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--bd-green);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        /* ============ HERO SLIDER ============ */
+        .hero-slider {
+            position: relative;
+            height: 420px;
+            overflow: hidden;
+            background: var(--bd-green-dark);
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease, visibility 1s ease;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,77,56,0.88) 0%, rgba(0,106,78,0.72) 50%, rgba(0,0,0,0.5) 100%);
+        }
+
+        /* Bangladeshi-style empty unit images */
+        .slide-1 { background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); }
+        .slide-2 { background-image: url('https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); }
+        .slide-3 { background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); }
+
+        .slide-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .slide-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(244,42,65,0.9);
+            color: white;
+            padding: 0.3rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(10px);
+        }
+
+        .slide-tag i { font-size: 0.62rem; }
+
+        .slide-content h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.7rem;
+            max-width: 720px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .slide-content h1 .accent { color: var(--gold); }
+
+        .slide-content p {
+            font-size: 1rem;
+            max-width: 620px;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .hero-slider:hover .slider-arrow {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .slider-arrow:hover {
+            background: var(--bd-red);
+            border-color: var(--bd-red);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-arrow.prev { left: 2rem; }
+        .slider-arrow.next { right: 2rem; }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.6rem;
+            z-index: 5;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            padding: 0;
+        }
+
+        .dot.active {
+            background: var(--bd-red);
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        /* ============ SECTION BASE ============ */
+        section { padding: 4.5rem 2rem; }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--bd-red);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .section-eyebrow::before,
+        .section-eyebrow::after {
+            content: '';
+            width: 28px;
+            height: 1.5px;
+            background: var(--bd-red);
+        }
+
+        .section-head h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--bd-green-dark);
+            margin-bottom: 0.7rem;
+            line-height: 1.3;
+        }
+
+        .section-head p {
+            color: var(--text-body);
+            max-width: 640px;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        /* ============ ABOUT ============ */
+        .about-section { background: var(--light-bg); }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            color: var(--bd-green-dark);
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .about-content p {
+            color: var(--text-body);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .highlight {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 1.5rem 1rem;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .highlight:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--bd-green);
+        }
+
+        .highlight i {
+            width: 44px;
+            height: 44px;
+            background: rgba(0,106,78,0.1);
+            color: var(--bd-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* ============ WHY CHOOSE US ============ */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.8rem 1.4rem;
+            border-radius: 14px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--bd-green);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: transparent;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+            background: var(--bd-red);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(0,106,78,0.1), rgba(0,106,78,0.05));
+            color: var(--bd-green);
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--bd-green);
+            color: white;
+            transform: rotate(-5deg);
+        }
+
+        .feature-card h3 {
+            color: var(--bd-green-dark);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-card p {
+            color: var(--text-body);
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        /* ============ ROOMS ============ */
+        .rooms-section { background: var(--light-bg); }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .unit-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: all 0.35s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .unit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+
+        .unit-img {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .unit-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.55), transparent 55%);
+        }
+
+        .unit-price-badge {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            background: white;
+            color: var(--bd-green);
+            padding: 0.4rem 1rem;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1rem;
+            z-index: 2;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .unit-price-badge small {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .unit-body {
+            padding: 1.5rem 1.6rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .unit-body h3 {
+            color: var(--bd-green-dark);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .unit-body .unit-subtitle {
+            color: var(--bd-green);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.9rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .unit-body .unit-desc {
+            color: var(--text-body);
+            font-size: 0.92rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.65;
+        }
+
+        .unit-features {
+            list-style: none;
+            margin-bottom: 1.2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem 1rem;
+        }
+
+        .unit-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.86rem;
+            color: var(--text-body);
+        }
+
+        .unit-features li i {
+            color: var(--bd-green);
+            font-size: 0.8rem;
+            width: 16px;
+            flex-shrink: 0;
+        }
+
+        .unit-bills {
+            background: #fff8e6;
+            border: 1px solid #ffe4a8;
+            border-radius: 10px;
+            padding: 0.9rem 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .unit-bills .bills-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a6508;
+            margin-bottom: 0.6rem;
+        }
+
+        .unit-bills .bills-title i {
+            color: #c9930f;
+            font-size: 0.85rem;
+        }
+
+        .unit-bills .bills-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .unit-bills .bills-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: #6b5312;
+            font-weight: 500;
+        }
+
+        .unit-bills .bills-list li i {
+            color: #c9930f;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        .unit-footer {
+            margin-top: auto;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .unit-footer .price-display {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .unit-footer .price-display .p-amount {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--bd-red);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .unit-footer .price-display .p-period {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .btn-request {
+            background: var(--bd-green);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            border: none;
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: inherit;
+            box-shadow: 0 6px 16px rgba(0,106,78,0.25);
+        }
+
+        .btn-request:hover {
+            background: var(--bd-red);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(244,42,65,0.35);
+        }
+
+        .btn-request i { font-size: 0.8rem; }
+
+        /* ============ RULES ============ */
+        .rules-section {
+            background: linear-gradient(135deg, var(--bd-green-darker) 0%, var(--bd-green-dark) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rules-section::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(244,42,65,0.15), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .rules-section .section-eyebrow { color: var(--gold); }
+        .rules-section .section-eyebrow::before,
+        .rules-section .section-eyebrow::after { background: var(--gold); }
+        .rules-section .section-head h2 { color: white; }
+        .rules-section .section-head p { color: rgba(255,255,255,0.8); }
+
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .rule-item {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.3rem;
+            border-radius: 12px;
+            display: flex;
+            gap: 0.9rem;
+            transition: all 0.3s;
+            border-left: 3px solid var(--bd-red);
+        }
+
+        .rule-item:hover {
+            background: rgba(244,42,65,0.12);
+            transform: translateY(-4px);
+            border-left-color: var(--gold);
+        }
+
+        .rule-item .rule-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--bd-red);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+
+        .rule-item h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #ffd9dd;
+        }
+
+        .rule-item p {
+            font-size: 0.82rem;
+            opacity: 0.85;
+            line-height: 1.55;
+        }
+
+        .rules-warning {
+            margin-top: 2rem;
+            background: rgba(244,42,65,0.15);
+            border: 1px solid var(--bd-red);
+            padding: 1.1rem 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .rules-warning i {
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+
+        /* ============ FAQ ============ */
+        .faq-section { background: var(--light-bg); }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 0.9rem;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover { border-color: var(--bd-green); }
+
+        .faq-question {
+            padding: 1.2rem 1.4rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 600;
+            color: var(--bd-green-dark);
+            font-size: 0.98rem;
+            transition: background 0.3s;
+            user-select: none;
+        }
+
+        .faq-question:hover { background: rgba(0,106,78,0.03); }
+
+        .faq-question i {
+            color: var(--bd-red);
+            transition: transform 0.3s;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .faq-item.open .faq-question i { transform: rotate(180deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 1.4rem;
+            color: var(--text-body);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 400px;
+            padding: 0 1.4rem 1.3rem;
+        }
+
+        /* ============ CONTACT ============ */
+        .contact-minimal {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+
+        .contact-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-inner h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--bd-green-dark);
+            margin-bottom: 0.6rem;
+        }
+
+        .contact-inner h2 .en {
+            display: block;
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        .contact-inner > p {
+            color: var(--text-body);
+            margin-bottom: 2rem;
+            font-size: 0.98rem;
+        }
+
+        .contact-line-items {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-line {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+
+        .contact-line i {
+            width: 42px;
+            height: 42px;
+            background: white;
+            color: var(--bd-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: all 0.25s;
+            flex-shrink: 0;
+        }
+
+        .contact-line:hover { color: var(--bd-green); }
+
+        .contact-line:hover i {
+            background: var(--bd-green);
+            color: white;
+            border-color: var(--bd-green);
+            transform: translateY(-2px);
+        }
+
+        .contact-line .label-line {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        .contact-line .label-line .lbl {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .contact-line .label-line .val {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .contact-time {
+            margin-top: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 0.75rem 1.4rem;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            font-size: 0.88rem;
+            color: var(--text-body);
+            box-shadow: var(--shadow-sm);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-time i {
+            color: var(--bd-red);
+            font-size: 0.95rem;
+        }
+
+        .contact-time strong {
+            color: var(--bd-green);
+            font-weight: 600;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: var(--bd-green-darker);
+            color: rgba(255,255,255,0.75);
+            border-top: 2px solid var(--bd-red);
+        }
+
+        .footer-slim {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0.85rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.82rem;
+        }
+
+        .footer-copy {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .footer-copy .flag-mini {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--bd-green);
+            box-shadow: inset -4px 0 0 var(--bd-red);
+            flex-shrink: 0;
+        }
+
+        .footer-address {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.72);
+        }
+
+        .footer-address i {
+            color: var(--gold);
+            font-size: 0.78rem;
+        }
+
+        /* ============ REQUEST MODAL ============ */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,20,15,0.75);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 20px;
+            max-width: 680px;
+            width: 100%;
+            max-height: 92vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            border-top: 5px solid var(--bd-green);
+            transform: translateY(20px) scale(0.98);
+            transition: transform 0.35s;
+        }
+
+        .modal-overlay.active .modal {
+            transform: translateY(0) scale(1);
+        }
+
+        .modal-header {
+            padding: 1.6rem 2rem 1rem;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        .modal-header .modal-icon-badge {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--bd-green), var(--bd-green-dark));
+            color: white;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 0.9rem;
+            box-shadow: 0 6px 16px rgba(0,106,78,0.25);
+        }
+
+        .modal-header h3 {
+            color: var(--bd-green-dark);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .modal-header .modal-sub {
+            color: var(--text-muted);
+            font-size: 0.86rem;
+        }
+
+        .modal-header .modal-sub strong {
+            color: var(--bd-green);
+            font-weight: 600;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.2rem;
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            background: var(--bd-red);
+            color: white;
+            border-color: var(--bd-red);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 1.5rem 2rem 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--bd-green-dark);
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.2px;
+        }
+
+        .form-group label .required {
+            color: var(--bd-red);
+            margin-left: 2px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            font-size: 0.92rem;
+            font-family: inherit;
+            background: var(--light-bg);
+            transition: all 0.25s;
+            outline: none;
+            color: var(--text-dark);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--bd-green);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(0,106,78,0.1);
+        }
+
+        .form-group input.error,
+        .form-group textarea.error,
+        .form-group select.error {
+            border-color: var(--bd-red);
+            background: #fff5f6;
+        }
+
+        .form-group .error-msg {
+            display: none;
+            color: var(--bd-red);
+            font-size: 0.78rem;
+            margin-top: 0.3rem;
+            font-weight: 500;
+        }
+
+        .form-group .error-msg.show {
+            display: block;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #a0aec0;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            justify-content: center;
+            background: var(--bd-green);
+            color: white;
+            padding: 0.85rem 1.5rem;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: inherit;
+            box-shadow: 0 6px 16px rgba(0,106,78,0.25);
+            margin-top: 0.5rem;
+        }
+
+        .btn-submit:hover:not(:disabled) {
+            background: var(--bd-green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 22px rgba(0,106,78,0.35);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-submit .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            display: none;
+        }
+
+        .btn-submit.loading .spinner { display: inline-block; }
+        .btn-submit.loading .btn-icon { display: none; }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .success-screen {
+            display: none;
+            text-align: center;
+        }
+
+        .success-screen.show { display: block; }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--bd-green), var(--bd-green-dark));
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 10px 25px rgba(0,106,78,0.3);
+            animation: popIn 0.5s ease;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .success-screen h3 {
+            color: var(--bd-green-dark);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+
+        .success-screen .success-msg {
+            color: var(--text-body);
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-close-success {
+            background: var(--bd-green);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            border: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+            box-shadow: 0 6px 16px rgba(0,106,78,0.25);
+        }
+
+        .btn-close-success:hover {
+            background: var(--bd-green-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1100px) {
+            .nav-menu a { padding: 0.55rem 0.7rem; font-size: 0.85rem; }
+            .nav-menu a i { display: none; }
+            .about-highlights { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 900px) {
+            .navbar { height: 64px; padding: 0 1rem; }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0.2rem;
+                box-shadow: var(--shadow-lg);
+                border-top: 2px solid var(--bd-red);
+                align-items: stretch;
+            }
+            .nav-menu.active { display: flex; }
+            .nav-menu a { width: 100%; padding: 0.8rem 1rem; justify-content: flex-start; }
+            .nav-menu a i { display: inline-block; }
+            .mobile-toggle { display: flex; align-items: center; justify-content: center; }
+            .hero-slider { height: 380px; }
+            .slide-content h1 { font-size: 1.9rem; }
+            .slide-content p { font-size: 0.92rem; }
+            .slider-arrow { display: none; }
+            .rooms-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 600px) {
+            .logo-text .en { display: none; }
+            .logo-text .bn { font-size: 1.05rem; }
+            .btn-portal span { display: none; }
+            .btn-portal { padding: 0.55rem; border-radius: 50%; width: 40px; justify-content: center; }
+            .btn-portal i { font-size: 1rem; }
+            .lang-btn { padding: 0.3rem 0.6rem; font-size: 0.72rem; }
+            .section-head h2 { font-size: 1.5rem; }
+            .section-head p { font-size: 0.9rem; }
+            section { padding: 2.5rem 1rem; }
+
+            .hero-slider { height: 320px; }
+            .slide-content { padding: 0 1rem; }
+            .slide-content h1 { font-size: 1.35rem; }
+            .slide-content p { font-size: 0.85rem; }
+            .slide-tag { font-size: 0.65rem; padding: 0.25rem 0.75rem; }
+
+            .about-content h3 { font-size: 1.25rem; }
+            .about-content p { font-size: 0.9rem; }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+            .feature-card { padding: 1.2rem 0.75rem; }
+            .feature-icon {
+                width: 46px;
+                height: 46px;
+                font-size: 1.1rem;
+                margin-bottom: 0.7rem;
+                border-radius: 10px;
+            }
+            .feature-card h3 { font-size: 0.88rem; }
+            .feature-card p { font-size: 0.75rem; line-height: 1.45; }
+
+            .rooms-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .unit-img { height: 200px; }
+            .unit-body { padding: 1.2rem 1.1rem; }
+            .unit-body h3 { font-size: 1.15rem; }
+            .unit-body .unit-desc { font-size: 0.88rem; }
+            .unit-features { grid-template-columns: 1fr; gap: 0.5rem; }
+            .unit-footer .price-display .p-amount { font-size: 1.15rem; }
+            .btn-request { padding: 0.6rem 1.1rem; font-size: 0.8rem; }
+
+            .rules-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.7rem;
+            }
+            .rule-item {
+                padding: 1rem 0.85rem;
+                gap: 0.6rem;
+                border-radius: 10px;
+            }
+            .rule-item .rule-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
+            }
+            .rule-item h4 { font-size: 0.82rem; }
+            .rule-item p { font-size: 0.72rem; line-height: 1.45; }
+
+            .rules-grid .rule-item:last-child:nth-child(odd) {
+                grid-column: span 2;
+            }
+
+            .faq-question { padding: 1rem; font-size: 0.88rem; }
+            .faq-answer { font-size: 0.85rem; padding: 0 1rem; }
+            .faq-item.open .faq-answer { padding: 0 1rem 1rem; }
+
+            .contact-minimal { padding: 2.5rem 1rem; }
+            .contact-line-items { flex-direction: column; gap: 1rem; align-items: center; }
+            .contact-inner h2 { font-size: 1.35rem; }
+            .contact-line .label-line .val { font-size: 0.88rem; }
+            .contact-time { font-size: 0.8rem; padding: 0.65rem 1rem; }
+
+            .footer-slim { flex-direction: column; text-align: center; padding: 0.85rem 1rem; gap: 0.5rem; font-size: 0.75rem; }
+
+            .modal-header { padding: 1.3rem 1.3rem 0.9rem; }
+            .modal-body { padding: 1.2rem 1.3rem 1.5rem; }
+            .modal-header h3 { font-size: 1.15rem; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="lang-bn">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <div class="navbar">
+            <a href="#home" class="logo">
+                <div class="logo-mark"><i class="fas fa-home"></i></div>
+                <div class="logo-text">
+                    <span class="bn">মিয়া বাড়ি</span>
+                    <span class="en">MIA BARI</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"><i class="fas fa-home"></i> <span class="bn">হোম</span><span class="en">Home</span></a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> <span class="bn">বাড়ি সম্পর্কে</span><span class="en">About</span></a></li>
+                <li><a href="#rooms"><i class="fas fa-bed"></i> <span class="bn">রুম</span><span class="en">Rooms</span></a></li>
+                <li><a href="#rules"><i class="fas fa-scroll"></i> <span class="bn">নিয়মাবলি</span><span class="en">Rules</span></a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> <span class="bn">যোগাযোগ</span><span class="en">Contact</span></a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="lang-toggle" id="langToggle">
+                    <button class="lang-btn active" data-lang="bn">বাংলা</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="portal.html" class="btn-portal">
+                    <i class="fas fa-user-shield"></i>
+                    <span class="bn">পোর্টাল</span>
+                    <span class="en">Portal</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero-slider" id="home">
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+                <div class="slide-tag">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="bn">বিশ্বস্ত আবাসন</span>
+                    <span class="en">Trusted Residence</span>
+                </div>
+                <h1>
+                    <span class="bn">স্বপ্নের <span class="accent">বাসস্থান</span> খুঁজে নিন এখানে</span>
+                    <span class="en">Find Your <span class="accent">Dream Home</span> Here</span>
+                </h1>
+                <p>
+                    <span class="bn">গাজীপুর মহানগরের এনায়েতপুরে অবস্থিত একটি শান্ত, নিরাপদ ও ইসলামিক পরিবেশে পরিবার-বান্ধব বাসস্থান।</span>
+                    <span class="en">A peaceful, safe and family-friendly residence in an Islamic environment, located in Enayetpur, Gazipur City.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <div class="slide-tag">
+                    <i class="fas fa-mosque"></i>
+                    <span class="bn">ইসলামিক পরিবেশ</span>
+                    <span class="en">Islamic Environment</span>
+                </div>
+                <h1>
+                    <span class="bn">শরীয়াহ <span class="accent">অনুযায়ী</span> পরিচালিত</span>
+                    <span class="en">Operated per <span class="accent">Shariah</span></span>
+                </h1>
+                <p>
+                    <span class="bn">আপনার পরিবারের জন্য একটি পবিত্র ও নিরাপদ আবাসস্থল। সমস্ত নিয়মাবলি কঠোরভাবে শরীয়াহ অনুসারে পরিচালিত।</span>
+                    <span class="en">A pure and safe residence for your family. All rules are strictly maintained in accordance with Shariah.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <div class="slide-tag">
+                    <i class="fas fa-gem"></i>
+                    <span class="bn">সাশ্রয়ী মূল্যে</span>
+                    <span class="en">Affordable Rates</span>
+                </div>
+                <h1>
+                    <span class="bn">আরামদায়ক <span class="accent">ইউনিট</span> সাশ্রয়ী মূল্যে</span>
+                    <span class="en">Comfortable <span class="accent">Units</span> at Affordable Rates</span>
+                </h1>
+                <p>
+                    <span class="bn">একতলা বাড়িতে দুটি ইউনিট — একটি ছোট পরিবারের জন্য এক রুম, অন্যটি মাঝারি পরিবারের জন্য দুই রুম।</span>
+                    <span class="en">Two units in a single-story home — one single-room for small family, one double-room for medium family.</span>
+                </p>
+            </div>
+        </div>
+
+        <button class="slider-arrow prev" id="prevBtn" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" id="nextBtn" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content fade-up">
+                <div class="section-eyebrow" style="margin-bottom:0.8rem;">
+                    <span class="bn">আমাদের সম্পর্কে</span>
+                    <span class="en">About Us</span>
+                </div>
+                <h3>
+                    <span class="bn">ইসলামিক পরিবেশে নিরাপদ ও আরামদায়ক বাসস্থান</span>
+                    <span class="en">A Safe & Comfortable Home in an Islamic Environment</span>
+                </h3>
+                <p>
+                    <span class="bn">এটি একটি একতলা পারিবারিক বাসস্থান, যা সম্পূর্ণভাবে শরীয়াহ অনুসারে পরিচালিত। গাজীপুর মহানগরের এনায়েতপুরে অবস্থিত এই বাড়িটি শান্ত পরিবেশ, নিরাপত্তা এবং দ্বীনি ভ্রাতৃত্বের ছোঁয়া নিয়ে আপনার জন্য প্রস্তুত।</span>
+                    <span class="en">This is a single-story family residence, fully maintained in accordance with Shariah. Located in Enayetpur under Gazipur City, this home offers a peaceful environment, security, and a spirit of Islamic brotherhood.</span>
+                </p>
+                <p>
+                    <span class="bn">প্রোপ্রাইটর <strong>ইসহাক মিয়া</strong> অত্যন্ত সততা ও নিষ্ঠার সাথে এই বাড়িটি পরিচালনা করছেন। এখানে রয়েছে দুটি স্বতন্ত্র ইউনিট — একটি ছোট পরিবারের জন্য এক রুমের ও অন্যটি মাঝারি পরিবারের জন্য দুই রুমের; প্রতিটি ইউনিটেই রয়েছে আলাদা বাথরুম ও রান্নাঘর।</span>
+                    <span class="en">Proprietor <strong>Ishaq Mia</strong> manages this home with utmost honesty and dedication. There are two separate units — a single-room unit for a small family and a double-room unit for a medium family; each unit has its own bathroom and kitchen.</span>
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="bn">বিশ্বস্ত আবাসন</span>
+                        <span class="en">Trusted Residence</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-mosque"></i>
+                        <span class="bn">ইসলামিক পরিবেশ</span>
+                        <span class="en">Islamic Environment</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-lock"></i>
+                        <span class="bn">নিরাপদ এলাকা</span>
+                        <span class="en">Safe Area</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span class="bn">সাশ্রয়ী ভাড়া</span>
+                        <span class="en">Affordable Rent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section>
+        <div class="container">
+            <div class="section-head fade-up">
+                <div class="section-eyebrow">
+                    <span class="bn">কেন আমাদের বেছে নেবেন</span>
+                    <span class="en">Why Choose Us</span>
+                </div>
+                <h2>
+                    <span class="bn">আমাদের বৈশিষ্ট্যসমূহ</span>
+                    <span class="en">Our Features</span>
+                </h2>
+                <p>
+                    <span class="bn">আপনার পরিবারের প্রয়োজনীয় সব সুবিধাই এখানে উপলব্ধ।</span>
+                    <span class="en">All the facilities your family needs are available here.</span>
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3><span class="bn">নিরাপদ পরিবেশ</span><span class="en">Safe Environment</span></h3>
+                    <p><span class="bn">শান্ত ও নিরাপদ এলাকায় অবস্থিত। দিন-রাত নিরাপত্তা নিশ্চিত করা হয়।</span><span class="en">Located in a peaceful & safe area. Day-night security is ensured.</span></p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-mosque"></i></div>
+                    <h3><span class="bn">ইসলামিক পরিবেশ</span><span class="en">Islamic Environment</span></h3>
+                    <p><span class="bn">সম্পূর্ণভাবে শরীয়াহ অনুসারে পরিচালিত। দ্বীনি ভ্রাতৃত্বের পরিবেশ।</span><span class="en">Fully maintained per Shariah. An atmosphere of Islamic brotherhood.</span></p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3><span class="bn">বিদ্যুৎ সুবিধা</span><span class="en">Electricity</span></h3>
+                    <p><span class="bn">প্রতিটি ইউনিটে পৃথক বিদ্যুৎ সংযোগ। মিটার/সাব-মিটার অনুযায়ী বিল পরিশোধ।</span><span class="en">Separate electricity connection for each unit. Bill paid per meter/sub-meter.</span></p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-tint"></i></div>
+                    <h3><span class="bn">পানি সরবরাহ</span><span class="en">Water Supply</span></h3>
+                    <p><span class="bn">সর্বক্ষণ পানি পাওয়া যায়। পরিষ্কার ও বিশুদ্ধ পানির ব্যবস্থা।</span><span class="en">Water is available at all times. Clean and pure water supply.</span></p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+                    <h3><span class="bn">ইন্টারনেট সুবিধা</span><span class="en">Internet Facility</span></h3>
+                    <p><span class="bn">চাইলে ইন্টারনেট সংযোগ নেওয়া যাবে। তবে ব্যবহার অবশ্যই শরীয়াহসম্মত হতে হবে।</span><span class="en">Internet connection can be taken if desired. However, usage must be Shariah-compliant.</span></p>
+                </div>
+
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h3><span class="bn">সাশ্রয়ী ভাড়া</span><span class="en">Affordable Rent</span></h3>
+                    <p><span class="bn">কোনো গোপন চার্জ নেই। আলোচনার ভিত্তিতে ভাড়া নির্ধারণ করা হয়।</span><span class="en">No hidden charges. Rent is set through mutual discussion.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ROOMS ============ -->
+    <section class="rooms-section" id="rooms">
+        <div class="container">
+            <div class="section-head fade-up">
+                <div class="section-eyebrow">
+                    <span class="bn">ভাড়ার জন্য উপলব্ধ</span>
+                    <span class="en">Available for Rent</span>
+                </div>
+                <h2>
+                    <span class="bn">আমাদের ইউনিটসমূহ</span>
+                    <span class="en">Our Units</span>
+                </h2>
+                <p>
+                    <span class="bn">একতলা বাড়িতে দুটি ইউনিট — একটি ছোট পরিবারের জন্য এক রুম, অন্যটি মাঝারি পরিবারের জন্য দুই রুম।</span>
+                    <span class="en">Two units in a single-story home — one single-room for small family, one double-room for medium family.</span>
+                </p>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Unit 1: 2 Rooms -->
+                <div class="unit-card fade-up">
+                    <div class="unit-img" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+                        <div class="unit-price-badge">৳ ১২,০০০ <small>/<span class="bn">মাস</span><span class="en">mo</span></small></div>
+                    </div>
+                    <div class="unit-body">
+                        <h3><span class="bn">দুই রুমের ইউনিট</span><span class="en">Two-Room Unit</span></h3>
+                        <div class="unit-subtitle">
+                            <i class="fas fa-users"></i>
+                            <span class="bn">মাঝারি পরিবারের জন্য উপযুক্ত</span>
+                            <span class="en">Suitable for Medium Family</span>
+                        </div>
+                        <p class="unit-desc">
+                            <span class="bn">দুটি প্রশস্ত রুম, একটি বাথরুম ও একটি রান্নাঘর সহ সম্পূর্ণ ইউনিট। মাঝারি আকারের পরিবারের জন্য আদর্শ।</span>
+                            <span class="en">A complete unit with two spacious rooms, one bathroom and one kitchen. Ideal for a medium-sized family.</span>
+                        </p>
+                        <ul class="unit-features">
+                            <li><i class="fas fa-bed"></i> <span class="bn">দুইটি রুম</span><span class="en">2 Rooms</span></li>
+                            <li><i class="fas fa-bath"></i> <span class="bn">একটি বাথরুম</span><span class="en">1 Bathroom</span></li>
+                            <li><i class="fas fa-utensils"></i> <span class="bn">একটি রান্নাঘর</span><span class="en">1 Kitchen</span></li>
+                            <li><i class="fas fa-window-maximize"></i> <span class="bn">জানালা</span><span class="en">Window</span></li>
+                            <li><i class="fas fa-users"></i> <span class="bn">মাঝারি পরিবার</span><span class="en">Medium Family</span></li>
+                            <li><i class="fas fa-plug"></i> <span class="bn">বিদ্যুৎ সংযোগ</span><span class="en">Electricity</span></li>
+                        </ul>
+
+                        <div class="unit-bills">
+                            <div class="bills-title">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span class="bn">আলাদা বিল</span>
+                                <span class="en">Separate Bills</span>
+                            </div>
+                            <ul class="bills-list">
+                                <li><i class="fas fa-bolt"></i> <span class="bn">বিদ্যুৎ বিল মিটার/সাব-মিটার অনুযায়ী</span><span class="en">Electricity per meter/sub-meter</span></li>
+                                <li><i class="fas fa-wifi"></i> <span class="bn">ইন্টারনেট নিলে বিল আলাদা</span><span class="en">Internet bill separate if taken</span></li>
+                                <li><i class="fas fa-trash-alt"></i> <span class="bn">ময়লার বিল আলাদা</span><span class="en">Garbage bill separate</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="unit-footer">
+                            <div class="price-display">
+                                <span class="p-amount">৳ ১২,০০০</span>
+                                <span class="p-period"><span class="bn">প্রতি মাস + বিল আলাদা</span><span class="en">per month + bills separate</span></span>
+                            </div>
+                            <button class="btn-request" onclick="openRequestModal('দুই রুমের ইউনিট', 'Two-Room Unit')">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="bn">রিকুয়েস্ট</span>
+                                <span class="en">Request</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 2: 1 Room -->
+                <div class="unit-card fade-up">
+                    <div class="unit-img" style="background-image: url('https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
+                        <div class="unit-price-badge">৳ ৭,০০০ <small>/<span class="bn">মাস</span><span class="en">mo</span></small></div>
+                    </div>
+                    <div class="unit-body">
+                        <h3><span class="bn">এক রুমের ইউনিট</span><span class="en">One-Room Unit</span></h3>
+                        <div class="unit-subtitle">
+                            <i class="fas fa-user-friends"></i>
+                            <span class="bn">ছোট পরিবারের জন্য উপযুক্ত</span>
+                            <span class="en">Suitable for Small Family</span>
+                        </div>
+                        <p class="unit-desc">
+                            <span class="bn">একটি প্রশস্ত রুম, একটি বাথরুম ও একটি রান্নাঘর সহ সম্পূর্ণ ইউনিট। ছোট আকারের পরিবারের জন্য আদর্শ।</span>
+                            <span class="en">A complete unit with one spacious room, one bathroom and one kitchen. Ideal for a small-sized family.</span>
+                        </p>
+                        <ul class="unit-features">
+                            <li><i class="fas fa-bed"></i> <span class="bn">একটি রুম</span><span class="en">1 Room</span></li>
+                            <li><i class="fas fa-bath"></i> <span class="bn">একটি বাথরুম</span><span class="en">1 Bathroom</span></li>
+                            <li><i class="fas fa-utensils"></i> <span class="bn">একটি রান্নাঘর</span><span class="en">1 Kitchen</span></li>
+                            <li><i class="fas fa-window-maximize"></i> <span class="bn">জানালা</span><span class="en">Window</span></li>
+                            <li><i class="fas fa-users"></i> <span class="bn">ছোট পরিবার</span><span class="en">Small Family</span></li>
+                            <li><i class="fas fa-plug"></i> <span class="bn">বিদ্যুৎ সংযোগ</span><span class="en">Electricity</span></li>
+                        </ul>
+
+                        <div class="unit-bills">
+                            <div class="bills-title">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span class="bn">আলাদা বিল</span>
+                                <span class="en">Separate Bills</span>
+                            </div>
+                            <ul class="bills-list">
+                                <li><i class="fas fa-bolt"></i> <span class="bn">বিদ্যুৎ বিল মিটার/সাব-মিটার অনুযায়ী</span><span class="en">Electricity per meter/sub-meter</span></li>
+                                <li><i class="fas fa-wifi"></i> <span class="bn">ইন্টারনেট নিলে বিল আলাদা</span><span class="en">Internet bill separate if taken</span></li>
+                                <li><i class="fas fa-trash-alt"></i> <span class="bn">ময়লার বিল আলাদা</span><span class="en">Garbage bill separate</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="unit-footer">
+                            <div class="price-display">
+                                <span class="p-amount">৳ ৭,০০০</span>
+                                <span class="p-period"><span class="bn">প্রতি মাস + বিল আলাদা</span><span class="en">per month + bills separate</span></span>
+                            </div>
+                            <button class="btn-request" onclick="openRequestModal('এক রুমের ইউনিট', 'One-Room Unit')">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="bn">রিকুয়েস্ট</span>
+                                <span class="en">Request</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RULES ============ -->
+    <section class="rules-section" id="rules">
+        <div class="container">
+            <div class="section-head fade-up">
+                <div class="section-eyebrow">
+                    <span class="bn">নিয়মাবলি</span>
+                    <span class="en">Rules & Regulations</span>
+                </div>
+                <h2>
+                    <span class="bn">কঠোরভাবে পালনীয় নিয়মাবলি</span>
+                    <span class="en">Strictly Enforced Rules</span>
+                </h2>
+                <p>
+                    <span class="bn">সম্পূর্ণ শরীয়াহ অনুসারে পরিচালিত। নিম্নলিখিত নিয়মগুলো কঠোরভাবে পালন করতে হবে।</span>
+                    <span class="en">Fully maintained per Shariah. The following rules must be strictly followed.</span>
+                </p>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-ban"></i></div>
+                    <div>
+                        <h4><span class="bn">মাদক সম্পূর্ণ নিষিদ্ধ</span><span class="en">Drugs Strictly Prohibited</span></h4>
+                        <p><span class="bn">মাদক, নেশাজাতীয় দ্রব্য, সিগারেট, গাঁজা — সবই সম্পূর্ণ নিষিদ্ধ।</span><span class="en">Drugs, intoxicants, cigarettes, marijuana — everything is strictly prohibited.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-wine-bottle"></i></div>
+                    <div>
+                        <h4><span class="bn">মদ্যপান নিষিদ্ধ</span><span class="en">Alcohol Prohibited</span></h4>
+                        <p><span class="bn">মদ্যপান ও মাদক সেবন কঠোরভাবে নিষিদ্ধ।</span><span class="en">Alcohol consumption and drug use are strictly banned.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-dice"></i></div>
+                    <div>
+                        <h4><span class="bn">জুয়া ও লটারি নিষিদ্ধ</span><span class="en">Gambling & Lottery Banned</span></h4>
+                        <p><span class="bn">জুয়া, লটারি, বাজি — সব ধরনের হারাম খেলা সম্পূর্ণ নিষিদ্ধ।</span><span class="en">Gambling, lottery, betting — all forms of haram games are strictly prohibited.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-music"></i></div>
+                    <div>
+                        <h4><span class="bn">উচ্চ শব্দে সংগীত নিষিদ্ধ</span><span class="en">Loud Music Prohibited</span></h4>
+                        <p><span class="bn">উচ্চ শব্দে গান-বাজনা বাজানো নিষিদ্ধ।</span><span class="en">Playing loud music is prohibited.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-user-slash"></i></div>
+                    <div>
+                        <h4><span class="bn">বেগানা মেলামেশা নিষিদ্ধ</span><span class="en">Free Mixing Prohibited</span></h4>
+                        <p><span class="bn">নারীর সাথে বেগানা পুরুষের অবৈধ মেলামেশা সম্পূর্ণ নিষিদ্ধ।</span><span class="en">Illegal mixing between non-mahram men and women is strictly prohibited.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-user-friends"></i></div>
+                    <div>
+                        <h4><span class="bn">অতিথি নিয়ন্ত্রণ</span><span class="en">Guest Control</span></h4>
+                        <p><span class="bn">রাত ১০টার পর কোনো অতিথি রাখা যাবে না।</span><span class="en">No guests are allowed to stay after 10 PM.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-soap"></i></div>
+                    <div>
+                        <h4><span class="bn">পরিচ্ছন্নতা রক্ষা</span><span class="en">Maintain Cleanliness</span></h4>
+                        <p><span class="bn">বাড়ি, বাথরুম এবং রান্নাঘর সর্বদা পরিচ্ছন্ন রাখতে হবে।</span><span class="en">The house, bathroom, and kitchen must always be kept clean.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-fire"></i></div>
+                    <div>
+                        <h4><span class="bn">ধূমপান নিষিদ্ধ</span><span class="en">Smoking Prohibited</span></h4>
+                        <p><span class="bn">বাড়ির ভেতরে ও বারান্দায় ধূমপান সম্পূর্ণ নিষিদ্ধ।</span><span class="en">Smoking inside the house and on the balcony is strictly prohibited.</span></p>
+                    </div>
+                </div>
+
+                <div class="rule-item fade-up">
+                    <div class="rule-icon"><i class="fas fa-wifi"></i></div>
+                    <div>
+                        <h4><span class="bn">ইন্টারনেট ব্যবহার শরীয়াহসম্মত</span><span class="en">Shariah-Compliant Internet Use</span></h4>
+                        <p><span class="bn">ইন্টারনেট সংযোগ নেওয়া হলে ব্যবহারে অবশ্যই শরীয়াহ নিয়ম অনুসরণ করতে হবে।</span><span class="en">If an internet connection is taken, its usage must strictly follow Shariah rules.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules-warning fade-up">
+                <i class="fas fa-video"></i>
+                <span class="bn"><strong>সতর্কতা:</strong> সম্পূর্ণ বাড়িটি সিসি ক্যামেরার মাধ্যমে নিয়ন্ত্রিত — পর্দা ও শালীনতা রক্ষার জন্য।</span>
+                <span class="en"><strong>Notice:</strong> The entire building is monitored by CCTV — to maintain purdah and modesty.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-head fade-up">
+                <div class="section-eyebrow">
+                    <span class="bn">সাধারণ জিজ্ঞাসা</span>
+                    <span class="en">FAQ</span>
+                </div>
+                <h2>
+                    <span class="bn">প্রশ্ন ও উত্তর</span>
+                    <span class="en">Questions & Answers</span>
+                </h2>
+                <p>
+                    <span class="bn">আপনার মনে যে প্রশ্নগুলো আসতে পারে।</span>
+                    <span class="en">Common questions you may have.</span>
+                </p>
+            </div>
+
+            <div class="faq-list fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">ভাড়া কত এবং কীভাবে পরিশোধ করতে হবে?</span><span class="en">What is the rent and how to pay?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">দুই রুমের ইউনিট ৳ ১২,০০০ এবং এক রুমের ইউনিট ৳ ৭,০০০ প্রতি মাস। প্রতি মাসের ৫ তারিখের মধ্যে পরিশোধ করতে হবে।</span>
+                        <span class="en">The two-room unit is ৳ 12,000 and the one-room unit is ৳ 7,000 per month. Payment must be made within the 5th of each month.</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">বিল কি ভাড়ার সাথে অন্তর্ভুক্ত?</span><span class="en">Are bills included in the rent?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">না। বিদ্যুৎ বিল মিটার/সাব-মিটার অনুযায়ী, ইন্টারনেট সংযোগ নিলে ইন্টারনেট বিল এবং ময়লার বিল আলাদাভাবে পরিশোধ করতে হবে।</span>
+                        <span class="en">No. Electricity bill is per meter/sub-meter, and if an internet connection is taken, the internet bill and garbage bill must be paid separately.</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">বাথরুম ও রান্নাঘর কি শেয়ার করা?</span><span class="en">Are the bathroom & kitchen shared?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">না, প্রতিটি ইউনিটের জন্য আলাদা বাথরুম ও আলাদা রান্নাঘর রয়েছে।</span>
+                        <span class="en">No, each unit has its own separate bathroom and separate kitchen.</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">কোন ইউনিট কাদের জন্য উপযুক্ত?</span><span class="en">Which unit is suitable for whom?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">এক রুমের ইউনিট ছোট পরিবারের জন্য এবং দুই রুমের ইউনিট মাঝারি পরিবারের জন্য উপযুক্ত।</span>
+                        <span class="en">The one-room unit is suitable for a small family and the two-room unit is suitable for a medium family.</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">রুম দেখতে কখন আসতে পারব?</span><span class="en">When can I visit to see the unit?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">সকাল ৯টা থেকে রাত ৮টার মধ্যে আসতে পারবেন (নামাজের সময় ব্যতীত)। আসার আগে ফোনে যোগাযোগ করা ভালো।</span>
+                        <span class="en">You can visit between 9 AM and 8 PM (except during prayer times). It is better to call before coming.</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span><span class="bn">অগ্রিম কত দিতে হবে?</span><span class="en">How much advance payment is required?</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="bn">সাধারণত এক মাসের ভাড়া অগ্রিম দিতে হয়। বিস্তারিত বিষয় মালিকের সাথে আলোচনা সাপেক্ষে নির্ধারিত হবে।</span>
+                        <span class="en">Usually one month's rent is required as advance. Further details will be settled through discussion with the owner.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact-minimal" id="contact">
+        <div class="contact-inner fade-up">
+            <div class="section-eyebrow" style="justify-content:center;">
+                <span class="bn">যোগাযোগ</span>
+                <span class="en">Contact</span>
+            </div>
+            <h2>
+                <span class="bn">সরাসরি যোগাযোগ করুন</span>
+                <span class="en">Get in Touch</span>
+            </h2>
+            <p>
+                <span class="bn">যেকোনো প্রশ্ন বা ভাড়ার বিষয়ে সরাসরি কল করুন।</span>
+                <span class="en">Call us directly for any question or rental inquiry.</span>
+            </p>
+
+            <div class="contact-line-items">
+                <a href="tel:+8801712345678" class="contact-line">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="label-line">
+                        <span class="lbl"><span class="bn">ফোন</span><span class="en">Phone</span></span>
+                        <span class="val">+৮৮০ ১৭১২ ৩৪৫ ৬৭৮</span>
+                    </div>
+                </a>
+
+                <a href="#" class="contact-line">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="label-line">
+                        <span class="lbl"><span class="bn">ঠিকানা</span><span class="en">Address</span></span>
+                        <span class="val">
+                            <span class="bn">এনায়েতপুর, কাশিমপুর, গাজীপুর</span>
+                            <span class="en">Enayetpur, Kashimpur, Gazipur</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="contact-time">
+                <i class="fas fa-clock"></i>
+                <span class="bn">ফোন করার সময়: <strong>সকাল ৯টা - রাত ৮টা</strong> (নামাজের সময় ব্যতীত)</span>
+                <span class="en">Calling hours: <strong>9 AM - 8 PM</strong> (except prayer times)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-slim">
+            <div class="footer-copy">
+                <span class="flag-mini"></span>
+                <span class="bn">© মিয়া বাড়ি</span>
+                <span class="en">© Mia Bari</span>
+            </div>
+            <div class="footer-address">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="bn">এনায়েতপুর, কাশিমপুর, গাজীপুর মহানগর</span>
+                <span class="en">Enayetpur, Kashimpur, Gazipur City</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ REQUEST MODAL ============ -->
+    <div class="modal-overlay" id="requestModal">
+        <div class="modal">
+            <div id="formView">
+                <div class="modal-header">
+                    <button class="modal-close" onclick="closeRequestModal()" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-icon-badge"><i class="fas fa-paper-plane"></i></div>
+                    <h3>
+                        <span class="bn">রুম রিকুয়েস্ট</span>
+                        <span class="en">Room Request</span>
+                    </h3>
+                    <p class="modal-sub">
+                        <span class="bn">ইউনিট:</span>
+                        <span class="en">Unit:</span>
+                        <strong id="selectedUnitName">-</strong>
+                    </p>
+                </div>
+
+                <div class="modal-body">
+                    <form id="requestForm" onsubmit="submitRequest(event)">
+                        <input type="hidden" name="unit_name" id="unitNameInput" value="">
+                        <input type="hidden" name="_subject" value="মিয়া বাড়ি — নতুন রুম রিকুয়েস্ট">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">
+                                    <span class="bn">পূর্ণ নাম</span>
+                                    <span class="en">Full Name</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" id="fullName" name="name" 
+                                       data-placeholder-bn="আপনার নাম" data-placeholder-en="Your Name"
+                                       required>
+                                <div class="error-msg" id="nameError"
+                                     data-error-bn="অনুগ্রহ করে আপনার নাম লিখুন" data-error-en="Please enter your name"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span class="bn">মোবাইল নম্বর</span>
+                                    <span class="en">Mobile Number</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" 
+                                       data-placeholder-bn="01XXXXXXXXX" data-placeholder-en="01XXXXXXXXX"
+                                       maxlength="11" required>
+                                <div class="error-msg" id="phoneError"
+                                     data-error-bn="সঠিক বাংলাদেশি মোবাইল নম্বর দিন" data-error-en="Enter a valid Bangladeshi mobile number"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="memberCount">
+                                    <span class="bn">পরিবারের সদস্য সংখ্যা</span>
+                                    <span class="en">Family Members</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="number" id="memberCount" name="member_count" 
+                                       data-placeholder-bn="যেমন: ৩" data-placeholder-en="e.g. 3"
+                                       min="1" max="20" required>
+                                <div class="error-msg" id="memberError"
+                                     data-error-bn="অনুগ্রহ করে সদস্য সংখ্যা লিখুন" data-error-en="Please enter family member count"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occupation">
+                                    <span class="bn">পেশা</span>
+                                    <span class="en">Occupation</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <select id="occupation" name="occupation" required>
+                                    <option value="" data-bn="-- নির্বাচন করুন --" data-en="-- Select --">-- নির্বাচন করুন --</option>
+                                    <option value="ছাত্র" data-bn="ছাত্র / Student" data-en="Student">ছাত্র / Student</option>
+                                    <option value="চাকরিজীবী" data-bn="চাকরিজীবী / Job Holder" data-en="Job Holder">চাকরিজীবী / Job Holder</option>
+                                    <option value="ব্যবসায়ী" data-bn="ব্যবসায়ী / Businessman" data-en="Businessman">ব্যবসায়ী / Businessman</option>
+                                    <option value="শিক্ষক" data-bn="শিক্ষক / Teacher" data-en="Teacher">শিক্ষক / Teacher</option>
+                                    <option value="ডাক্তার" data-bn="ডাক্তার / Doctor" data-en="Doctor">ডাক্তার / Doctor</option>
+                                    <option value="ইঞ্জিনিয়ার" data-bn="ইঞ্জিনিয়ার / Engineer" data-en="Engineer">ইঞ্জিনিয়ার / Engineer</option>
+                                    <option value="অন্যান্য" data-bn="অন্যান্য / Other" data-en="Other">অন্যান্য / Other</option>
+                                </select>
+                                <div class="error-msg" id="occupationError"
+                                     data-error-bn="অনুগ্রহ করে আপনার পেশা নির্বাচন করুন" data-error-en="Please select your occupation"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="bn">ইমেইল (ঐচ্ছিক)</span>
+                                <span class="en">Email (Optional)</span>
+                            </label>
+                            <input type="email" id="email" name="email" 
+                                   data-placeholder-bn="you@example.com" data-placeholder-en="you@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="bn">অতিরিক্ত বার্তা (ঐচ্ছিক)</span>
+                                <span class="en">Additional Message (Optional)</span>
+                            </label>
+                            <textarea id="message" name="message" 
+                                      data-placeholder-bn="আপনার কিছু বলার থাকলে লিখুন..." 
+                                      data-placeholder-en="Write anything you want to say..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="spinner"></span>
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                            <span class="bn">রিকুয়েস্ট পাঠান</span>
+                            <span class="en">Send Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="successView" class="success-screen">
+                <div class="modal-body" style="padding: 2.5rem 1.8rem;">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>
+                        <span class="bn">ধন্যবাদ!</span>
+                        <span class="en">Thank You!</span>
+                    </h3>
+                    <p class="success-msg">
+                        <span class="bn">আপনার আগ্রহের জন্য আন্তরিক ধন্যবাদ। রুম খালি থাকলে অবশ্যই আপনাকে জানানো হবে।</span>
+                        <span class="en">Thank you very much for your interest. If the room becomes available, we will definitely inform you.</span>
+                    </p>
+                    <p class="success-msg" style="margin-top:0.5rem; font-weight:600; color:var(--bd-green);">
+                        <span class="bn">ধন্যবাদ!</span>
+                        <span class="en">Thank you!</span>
+                    </p>
+                    <button class="btn-close-success" onclick="closeRequestModal()">
+                        <span class="bn">ঠিক আছে</span>
+                        <span class="en">OK</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============ LANGUAGE TOGGLE ============
+        const langToggle = document.getElementById('langToggle');
+        const langBtns = langToggle.querySelectorAll('.lang-btn');
+        const body = document.body;
+
+        function updateFormLanguage() {
+            const isBn = body.classList.contains('lang-bn');
+            
+            document.querySelectorAll('[data-placeholder-bn]').forEach(el => {
+                el.placeholder = isBn ? el.dataset.placeholderBn : el.dataset.placeholderEn;
+            });
+            
+            document.querySelectorAll('.error-msg[data-error-bn]').forEach(el => {
+                el.textContent = isBn ? el.dataset.errorBn : el.dataset.errorEn;
+            });
+            
+            document.querySelectorAll('select option[data-bn]').forEach(opt => {
+                opt.textContent = isBn ? opt.dataset.bn : opt.dataset.en;
+            });
+        }
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                langBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                body.classList.remove('lang-bn', 'lang-en');
+                body.classList.add('lang-' + lang);
+                localStorage.setItem('preferredLang', lang);
+                document.documentElement.lang = lang;
+                updateFormLanguage();
+            });
+        });
+
+        const savedLang = localStorage.getItem('preferredLang') || 'bn';
+        body.classList.remove('lang-bn', 'lang-en');
+        body.classList.add('lang-' + savedLang);
+        langBtns.forEach(b => {
+            b.classList.toggle('active', b.dataset.lang === savedLang);
+        });
+        updateFormLanguage();
+
+        // ============ MOBILE MENU ============
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+
+        // ============ HERO SLIDER ============
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function goToSlide(index) {
+            slides.forEach((s, i) => s.classList.toggle('active', i === index));
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+            currentSlide = index;
+        }
+
+        function nextSlide() { goToSlide((currentSlide + 1) % slides.length); }
+        function prevSlide() { goToSlide((currentSlide - 1 + slides.length) % slides.length); }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            slideInterval = setInterval(nextSlide, 6000);
+        }
+        function stopAutoPlay() {
+            if (slideInterval) clearInterval(slideInterval);
+        }
+
+        nextBtn.addEventListener('click', () => { nextSlide(); startAutoPlay(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); startAutoPlay(); });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                goToSlide(parseInt(dot.dataset.slide));
+                startAutoPlay();
+            });
+        });
+
+        const slider = document.querySelector('.hero-slider');
+        slider.addEventListener('mouseenter', stopAutoPlay);
+        slider.addEventListener('mouseleave', startAutoPlay);
+
+        let touchStartX = 0;
+        slider.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        slider.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+                startAutoPlay();
+            }
+        }, { passive: true });
+
+        startAutoPlay();
+
+        // ============ FAQ ACCORDION ============
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // ============ SCROLL ANIMATIONS ============
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // ============ SMOOTH SCROLL ============
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const targetPos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: targetPos, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ============ REQUEST MODAL ============
+        const requestModal = document.getElementById('requestModal');
+        const formView = document.getElementById('formView');
+        const successView = document.getElementById('successView');
+        const selectedUnitName = document.getElementById('selectedUnitName');
+        const unitNameInput = document.getElementById('unitNameInput');
+        const phoneInput = document.getElementById('phone');
+        const memberInput = document.getElementById('memberCount');
+        const requestForm = document.getElementById('requestForm');
+
+        function openRequestModal(unitBn, unitEn) {
+            const isBn = document.body.classList.contains('lang-bn');
+            selectedUnitName.textContent = isBn ? unitBn : unitEn;
+            unitNameInput.value = unitBn + ' / ' + unitEn;
+
+            formView.style.display = 'block';
+            successView.classList.remove('show');
+
+            requestForm.reset();
+            document.querySelectorAll('.error-msg').forEach(el => el.classList.remove('show'));
+            document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(el => el.classList.remove('error'));
+
+            updateFormLanguage();
+
+            requestModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeRequestModal() {
+            requestModal.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                formView.style.display = 'block';
+                successView.classList.remove('show');
+                requestForm.reset();
+            }, 350);
+        }
+
+        requestModal.addEventListener('click', (e) => {
+            if (e.target === requestModal) closeRequestModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && requestModal.classList.contains('active')) {
+                closeRequestModal();
+            }
+        });
+
+        const bdPhonePattern = /^01[3-9]\d{8}$/;
+
+        phoneInput.addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/\D/g, '').slice(0, 11);
+        });
+
+        memberInput.addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/\D/g, '').slice(0, 2);
+        });
+
+        // ============ FORM SUBMIT ============
+        async function submitRequest(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const nameInput = document.getElementById('fullName');
+            const occupationSelect = document.getElementById('occupation');
+            const phoneError = document.getElementById('phoneError');
+            const nameError = document.getElementById('nameError');
+            const occupationError = document.getElementById('occupationError');
+            const memberError = document.getElementById('memberError');
+
+            [phoneError, nameError, occupationError, memberError].forEach(el => el.classList.remove('show'));
+            [phoneInput, nameInput, occupationSelect, memberInput].forEach(el => el.classList.remove('error'));
+
+            if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+                nameError.classList.add('show');
+                nameInput.classList.add('error');
+                isValid = false;
+            }
+
+            const phoneVal = phoneInput.value.trim();
+            if (!bdPhonePattern.test(phoneVal)) {
+                phoneError.classList.add('show');
+                phoneInput.classList.add('error');
+                isValid = false;
+            }
+
+            const memberVal = memberInput.value.trim();
+            if (!memberVal || parseInt(memberVal) < 1) {
+                memberError.classList.add('show');
+                memberInput.classList.add('error');
+                isValid = false;
+            }
+
+            if (!occupationSelect.value) {
+                occupationError.classList.add('show');
+                occupationSelect.classList.add('error');
+                isValid = false;
+            }
+
+            if (!isValid) {
+                const firstError = document.querySelector('.form-group input.error, .form-group select.error');
+                if (firstError) firstError.focus();
+                return;
+            }
+
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+
+            try {
+                const formData = new FormData(requestForm);
+                await fetch('https://formsubmit.co/ajax/raerpbd@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                formView.style.display = 'none';
+                successView.classList.add('show');
+            } catch (err) {
+                formView.style.display = 'none';
+                successView.classList.add('show');
+            } finally {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
