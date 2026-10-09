@@ -75,11 +75,11 @@
                                 <span class="p-amount">৳ ১২,০০০</span>
                                 <span class="p-period"><span class="bn">প্রতি মাস + বিল আলাদা</span><span class="en">per month + bills separate</span></span>
                             </div>
-                            <a href="https://script.google.com/macros/s/AKfycbwPUYCU4pzRpbF3imVjK0VKe3X6o6cuki_TZrh8X3sYqgjU9VFYoX7txhVxu9curAcS/exec" target="_blank" rel="noopener noreferrer" class="btn-request">
+                            <button class="btn-request" onclick="openRequestModal('দুই রুমের ইউনিট', 'Two-Room Unit')">
                                 <i class="fas fa-paper-plane"></i>
                                 <span class="bn">রিকুয়েস্ট</span>
                                 <span class="en">Request</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -126,17 +126,141 @@
                                 <span class="p-amount">৳ ৭,০০০</span>
                                 <span class="p-period"><span class="bn">প্রতি মাস + বিল আলাদা</span><span class="en">per month + bills separate</span></span>
                             </div>
-                            <a href="https://script.google.com/macros/s/AKfycbwPUYCU4pzRpbF3imVjK0VKe3X6o6cuki_TZrh8X3sYqgjU9VFYoX7txhVxu9curAcS/exec" target="_blank" rel="noopener noreferrer" class="btn-request">
+                            <button class="btn-request" onclick="openRequestModal('এক রুমের ইউনিট', 'One-Room Unit')">
                                 <i class="fas fa-paper-plane"></i>
                                 <span class="bn">রিকুয়েস্ট</span>
                                 <span class="en">Request</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modal-overlay" id="requestModal">
+        <div class="modal">
+            <div id="formView">
+                <div class="modal-header">
+                    <button class="modal-close" onclick="closeRequestModal()" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-icon-badge"><i class="fas fa-paper-plane"></i></div>
+                    <h3>
+                        <span class="bn">রুম রিকুয়েস্ট</span>
+                        <span class="en">Room Request</span>
+                    </h3>
+                    <p class="modal-sub">
+                        <span class="bn">ইউনিট:</span>
+                        <span class="en">Unit:</span>
+                        <strong id="selectedUnitName">-</strong>
+                    </p>
+                </div>
+
+                <div class="modal-body">
+                    <form id="requestForm">
+                        <input type="hidden" name="unit_name" id="unitNameInput" value="">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">
+                                    <span class="bn">পূর্ণ নাম</span>
+                                    <span class="en">Full Name</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" id="fullName" name="name" data-placeholder-bn="আপনার নাম" data-placeholder-en="Your Name" required>
+                                <div class="error-msg" id="nameError" data-error-bn="অনুগ্রহ করে আপনার নাম লিখুন" data-error-en="Please enter your name"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    <span class="bn">মোবাইল নম্বর</span>
+                                    <span class="en">Mobile Number</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" data-placeholder-bn="01XXXXXXXXX" data-placeholder-en="01XXXXXXXXX" maxlength="11" required>
+                                <div class="error-msg" id="phoneError" data-error-bn="সঠিক বাংলাদেশি মোবাইল নম্বর দিন" data-error-en="Enter a valid Bangladeshi mobile number"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="memberCount">
+                                    <span class="bn">পরিবারের সদস্য সংখ্যা</span>
+                                    <span class="en">Family Members</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="number" id="memberCount" name="members" data-placeholder-bn="যেমন: ৩" data-placeholder-en="e.g. 3" min="1" max="20" required>
+                                <div class="error-msg" id="memberError" data-error-bn="অনুগ্রহ করে সদস্য সংখ্যা লিখুন" data-error-en="Please enter family member count"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occupation">
+                                    <span class="bn">পেশা</span>
+                                    <span class="en">Occupation</span>
+                                    <span class="required">*</span>
+                                </label>
+                                <select id="occupation" name="occupation" required>
+                                    <option value="" data-bn="-- নির্বাচন করুন --" data-en="-- Select --">-- নির্বাচন করুন --</option>
+                                    <option value="ছাত্র" data-bn="ছাত্র / Student" data-en="Student">ছাত্র / Student</option>
+                                    <option value="চাকরিজীবী" data-bn="চাকরিজীবী / Job Holder" data-en="Job Holder">চাকরিজীবী / Job Holder</option>
+                                    <option value="ব্যবসায়ী" data-bn="ব্যবসায়ী / Businessman" data-en="Businessman">ব্যবসায়ী / Businessman</option>
+                                    <option value="শিক্ষক" data-bn="শিক্ষক / Teacher" data-en="Teacher">শিক্ষক / Teacher</option>
+                                    <option value="ডাক্তার" data-bn="ডাক্তার / Doctor" data-en="Doctor">ডাক্তার / Doctor</option>
+                                    <option value="ইঞ্জিনিয়ার" data-bn="ইঞ্জিনিয়ার / Engineer" data-en="Engineer">ইঞ্জিনিয়ার / Engineer</option>
+                                    <option value="অন্যান্য" data-bn="অন্যান্য / Other" data-en="Other">অন্যান্য / Other</option>
+                                </select>
+                                <div class="error-msg" id="occupationError" data-error-bn="অনুগ্রহ করে আপনার পেশা নির্বাচন করুন" data-error-en="Please select your occupation"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="bn">ইমেইল (ঐচ্ছিক)</span>
+                                <span class="en">Email (Optional)</span>
+                            </label>
+                            <input type="email" id="email" name="email" data-placeholder-bn="you@example.com" data-placeholder-en="you@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="bn">অতিরিক্ত বার্তা (ঐচ্ছিক)</span>
+                                <span class="en">Additional Message (Optional)</span>
+                            </label>
+                            <textarea id="message" name="message" data-placeholder-bn="আপনার কিছু বলার থাকলে লিখুন..." data-placeholder-en="Write anything you want to say..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="spinner"></span>
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                            <span class="bn">রিকুয়েস্ট পাঠান</span>
+                            <span class="en">Send Request</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="successView" class="success-screen">
+                <div class="modal-body" style="padding: 2.5rem 1.8rem;">
+                    <div class="success-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>
+                        <span class="bn">ধন্যবাদ!</span>
+                        <span class="en">Thank You!</span>
+                    </h3>
+                    <p class="success-msg">
+                        <span class="bn">আপনার আগ্রহের জন্য আন্তরিক ধন্যবাদ। রুম খালি থাকলে অবশ্যই আপনাকে জানানো হবে।</span>
+                        <span class="en">Thank you very much for your interest. If the room becomes available, we will definitely inform you.</span>
+                    </p>
+                    <button class="btn-close-success" onclick="closeRequestModal()">
+                        <span class="bn">ঠিক আছে</span>
+                        <span class="en">OK</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="footer-placeholder"></div>
 
